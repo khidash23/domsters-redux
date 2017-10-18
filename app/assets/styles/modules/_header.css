@@ -1,6 +1,7 @@
-#header {
+.header
+{
     background-color: #334;
-    background-image: url(../../img/guitarist.gif);
+    background-image: url(img/guitarist.gif);
     background-repeat: no-repeat;
     background-position: bottom right;
     border-width: .1em;
@@ -8,23 +9,20 @@
     border-bottom-width: 0;
 }
 
-#header {
-    color: #ec8;
-    border-color: #667;
-}
-
-#about #header {
-  background-image: url(../images/lineup.gif);
+.header.about
+{
+  background-image: url(img/lineup.gif);
+  background-size:250px 250px;
 }
 
 #photos #header {
-  background-image: url(../images/basshead.gif);
+  background-image: url(../img/basshead.gif);
 }
 
 #live #header {
-  background-image: url(../images/bassist.gif);
+  background-image: url(../img/bassist.gif);
 }
 
 #contact #header {
-  background-image: url(../images/drummer.gif);
+  background-image: url(../img/drummer.gif);
 }

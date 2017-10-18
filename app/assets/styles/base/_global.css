@@ -2,12 +2,6 @@ html {
   font-size: 16px;
 }
 
-body {
-  font-family: 'Slabo 27px', serif;
-  color: #333;
-}
-
-
 /* more code */
 
 img {
@@ -19,18 +13,19 @@ img {
 /* make this better */
 
 body {
-  color: #fb5;
+  /*color: #fb5;*/
+  color: #333;
   background-color: #334;
   font-size: 1.2rem;
-    font-size: 100%;
-    font-family: "Helvetica","Arial",sans-serif;
-    margin: 1rem auto;
-    background-color: #334;
-    background-image: url(../../img/background.gif);
-    background-attachment: fixed;
-    background-position: top left;
-    background-repeat: repeat-x;
-    max-width: 80%;
+  font-size: 100%;
+  font-family: 'Slabo 27px', serif;
+  margin: 1rem auto;
+  background-color: #334;
+  background-image: url(img/background.gif);
+  background-attachment: fixed;
+  background-position: top left;
+  background-repeat: repeat-x;
+  max-width: 80%;
 }
 
 a:link {
@@ -54,68 +49,37 @@ a:active {
 }
 
 h1 {
-  font-family: "Georgia", "Times New Roman", sans-serif;
+  /*font-family: "Georgia", "Times New Roman", sans-serif;*/
   font: 2.4em normal;
 }
 
 h2 {
-  font-family: "Georgia", "Times New Roman", sans-serif;
+  /*font-family: "Georgia", "Times New Roman", sans-serif;*/
   font: 1.8em normal;
   margin-top: 1em;
 }
 
 h3 {
-  font-family: "Georgia", "Times New Roman", sans-serif;
+  /*font-family: "Georgia", "Times New Roman", sans-serif;*/
   font: 1.4em normal;
   margin-top: 1em;
 }
-#navigation a:link, #navigation a:visited {
-  color: #eef;
-  background-color: transparent;
-  border-color: #99a;
-}
-
-
 
 a {
   font-weight: bold;
   text-decoration: none;
 }
 
-#navigation a.here:link, #navigation a.here:visited, #navigation a.here:hover, #navigation a.here:active {
-  color: #eef;
-  background-color: #799;
-}
-
-
-#content {
-  line-height: 1.8em;
-}
-
-#content p {
+.content p {
   margin: 1em 0;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-
-#content {
+.content
+{
+  line-height: 1.8em;
   color: #223;
   background-color: #edc;
   border-color: #667;
-}
-
-
-#content img {
-  border-color: #ba9;
-  outline-color: #dcb;
-}
-
-
-#content {
   border-width: .1em;
   border-style: solid;
   border-top-width: 0;
@@ -123,7 +87,10 @@ img {
   line-height: 1.8em;
 }
 
-#content img {
+.content img
+{
+  border-color: #ba9;
+  outline-color: #dcb;
   border-width: .1em;
   border-style: solid;
   outline-width: .1em;

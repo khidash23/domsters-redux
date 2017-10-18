@@ -24,4 +24,8 @@ gulp.task('watch', function() {
     gulp.start('cssInject');
   });
 
+  watch('./app/assets/js/*.js', function() {
+    browserSync.reload();
+  });
+
 });
