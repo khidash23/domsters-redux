@@ -67,8 +67,8 @@ h3 {
     margin-top: 1em;
 }
 
-#navigation a:link,
-#navigation a:visited {
+.navigation a:link,
+.navigation a:visited {
     color: #eef;
     background-color: transparent;
     border-color: #99a;
@@ -79,10 +79,10 @@ a {
     text-decoration: none;
 }
 
-#navigation a.here:link,
-#navigation a.here:visited,
-#navigation a.here:hover,
-#navigation a.here:active {
+.navigation a.here:link,
+.navigation a.here:visited,
+.navigation a.here:hover,
+.navigation a.here:active {
     color: #eef;
     background-color: #799;
 }
