@@ -1,12 +1,18 @@
 .technologies {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba($white, 0.8);
   padding: 0 2rem 1px 2rem;
+  margin-bottom: 9.8rem;
+
+  @mixin atMedium {
+    margin-bottom: 0;
+    padding: 0 1.875rem 1px 1.875rem;
+  }
 
   &__photo {
     position: relative;
     top: -8rem;
     
-    border: 6px solid rgba(255, 255, 255, 0.8);
+    border: 6px solid rgba($white, 0.8);
     border-radius: 30px;
     height: 160px;
     margin: 0 auto -8rem auto;

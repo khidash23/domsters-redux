@@ -1,8 +1,16 @@
 .row {
   @mixin clearfix;
 
+  &--t-padding {
+    padding-top: 8rem;
+  }
+
   &--gutters {
     margin-right: 6.5rem;
+  }
+
+  &--gutters-small {
+    margin-right: -4.5rem;
   }
 
   &--gutters-large {
@@ -50,5 +58,15 @@
     }
   }
   
-  
+  /* Begin Equal Height Rules */
+  &--equal-height-at-medium {
+    @mixin atMedium {
+      display: flex;
+    }
+
+    & > div {
+      float: none;
+      display: flex;
+    }
+  }
 }
