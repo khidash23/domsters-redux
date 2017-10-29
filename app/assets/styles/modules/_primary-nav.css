@@ -17,10 +17,10 @@
   }
 
   a {
-    color: $purple;
+    color: $white;
     display: block;
     font-weight: 300;
     text-decoration: none;
-    padding: 4.2rem 0;
+    padding: 1rem;
   }
 }
