@@ -2,12 +2,18 @@
   position: absolute;
   z-index: 2;
 
-  background-color: rgba(000, 000, 000, 0.3);
   padding: 1rem 0;
+  transition: background-color 0.3s ease-out;
   width: 100%;
 
+  &--is-expanded {
+    background-color: rgba($blue, 0.55);
+  }
+
   &__btn-container {
-    float: right;
+    @mixin atMedium {
+      float: right;
+    }
   }
 
   &__logo {
@@ -28,14 +34,34 @@
 
   /* hide the menu on phones */
   &__menu-content {
-    display: none;
+    position: relative;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10;
+
+    background-color: $white;
+    height: 2rem;
+    width: 2rem;
+    opacity: 0;
+    padding-top: 9rem;
+    text-align: center;
+    transform: scale(1.2);
+    transition: all 0.3s ease-out;
 
     @mixin atMedium {
-      display: block;
+      z-index: 1;
+
+      opacity: 1;
+      padding-top: 0;
+      text-align: left;
+      transform: scale(1);
     }
 
     &--is-visible {
-      display: block;
+      z-index: 1;
+
+      opacity: 1;
+      transform: scale(1);
     }
   }
 
