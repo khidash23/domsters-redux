@@ -30,7 +30,11 @@
   &__menu-content {
     display: none;
 
-    &mixin atMedium {
+    @mixin atMedium {
+      display: block;
+    }
+
+    &--is-visible {
       display: block;
     }
   }

@@ -13,8 +13,7 @@
   "dependencies": {
     "gulp-yarn": "^1.0.1",
     "jquery": "^3.2.1",
-    "normalize.css": "^7.0.0",
-    "webpack": "^3.8.1"
+    "normalize.css": "^7.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -35,6 +34,7 @@
     "postcss-import": "^10.0.0",
     "postcss-mixins": "^6.0.1",
     "postcss-nested": "^2.1.0",
-    "postcss-simple-vars": "^4.0.0"
+    "postcss-simple-vars": "^4.0.0",
+    "webpack": "^3.8.1"
   }
 }
