@@ -1,10 +1,14 @@
 var gulp = require('gulp'),
   webpack = require('webpack');
 
-gulp.task('scritps', function(callback) {
+gulp.task('scripts', function(callback) {
   // tell webpack where our config file is
-  webpack(require('../../webpack.config.js'), function() {
-    console.log('Webpack completed');
+  webpack(require('../../webpack.config.js'), function(err, stats) {
+    if (err) {
+      console.log(err.toString());
+    }
+
+    console.log(stats.toString());
     callback();
   });
 });

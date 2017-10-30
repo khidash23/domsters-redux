@@ -1,11 +1,20 @@
 var $ = require('jquery');
-var Person = require('./modules/Person');
+// var Person = require('./modules/Person');
+import Person from './modules/Person';
 
-var john = new Person('John Doe', 'red');
+class Adult extends Person {
+  payTaxes() {
+    console.log(this.name + ' now owes $0 in taxes');
+  }
+}
+
+console.log('Webpack Automation test#3');
+
+var john = new Adult('John Doe', 'red');
 john.greet();
-console.log(john);
+john.payTaxes();
 
-var jane = new Person('Jane Doe', 'green');
+var jane = new Person('Jane Doe', 'purple');
 jane.greet();
 
-// $('h2').remove();
+$('h2').remove();

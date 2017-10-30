@@ -1,14 +1,16 @@
 var gulp = require('gulp'),
-browserSync = require('browser-sync').create();
-watch = require('gulp-watch');
+  watch = require('gulp-watch'),
+  browserSync = require('browser-sync').create();
 
 gulp.task('cssInject', ['styles'], function() {
-  return gulp.src('./app/temp/styles/styles.css')
-    .pipe(browserSync.stream())
+  return gulp.src('./app/temp/styles/styles.css').pipe(browserSync.stream());
+});
+
+gulp.task('scriptsRefresh', ['scripts'], function() {
+  browserSync.reload();
 });
 
 gulp.task('watch', function() {
-
   browserSync.init({
     notify: false,
     server: {
@@ -24,4 +26,8 @@ gulp.task('watch', function() {
     gulp.start('cssInject');
   });
 
+  // watch for any changes to our js files
+  watch('./app/assets/js/**/*.js', function() {
+    gulp.start('scriptsRefresh');
+  });
 });
