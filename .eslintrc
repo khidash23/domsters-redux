@@ -10,7 +10,7 @@
   },
   "rules": {
     "import/no-extraneous-dependencies": ["error", {"devDependencies": true,
-    "optionalDependencies": true, "peerDependencies": true}]
+    "optionalDependencies": true, "peerDependencies": true}],
     "comma-dangle": ["error","never"],
     "no-unused-vars": [ "error",
     {
