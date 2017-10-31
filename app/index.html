@@ -36,7 +36,7 @@
         <!-- .site-header__menu-content -->
         <div class="site-header__menu-content">
           <div class="site-header__btn-container">
-            <a class="btn btn--orange" href="#">Get in Touch</a>
+            <a class="btn btn--orange open-modal" href="#">Get in Touch</a>
           </div>
           <nav class="primary-nav primary-nav--pull-right">
             <ul>
@@ -74,7 +74,7 @@
               in the day but it grew old and needed a facelift with a dose of
               modern technology. That was what we did with <strong>The Domsters
                 Redux</strong>. Enjoy and let us know what you think.</p>
-            <p><a class="btn btn--orange btn--large" href="contact.html">Do You Like?</a></p>
+            <p><a class="btn btn--orange btn--large open-modal" href="contact.html">Do You Like?</a></p>
         </div><!-- /.wrapper -->
       </div>  
     </div><!-- /.large-hero -->
@@ -229,22 +229,30 @@
         <div class="wrapper">
           <p><span class="site-footer__text">Copyright &copy;
               Domsters Redux 2017</span> <a href="#" class="btn btn--orange
-          btn--large">Get in Touch</a></p>    
+          btn--large open-modal">Get in Touch</a></p>    
         </div>
         <!-- /.wrapper --> 
       </footer>
   <div class="modal">
-    <h2 class="section-title section-title--blue section-title--less-margin"><span class="icon icon--mail section-title__icon"></span>Get in <strong>Touch</strong></h2>
-    <div class="wrapper wrapper--narrow">
-      <p class="modal__description">Connect with us on any of the platforms below:</p>
-    </div><!-- /.wrapper -->
+    <!-- .modal__inner -->
+    <div class="modal__inner">
+       <h2 class="section-title section-title--blue section-title--less-margin
+         "><span class="icon icon--mail section-title__icon"></span>Get in <strong>Touch</strong></h2>
+      <div class="wrapper wrapper--narrow">
+        <p class="modal__description">Connect with us on any of the platforms below:</p>
+      </div><!-- /.wrapper -->
 
-    <div class="social-icons">
-      <a href="#" class="social-icons__icon"><span class="icon icon--facebook"></span></a>
-      <a href="#" class="social-icons__icon"><span class="icon icon--twitter"></span></a>
-      <a href="#" class="social-icons__icon"><span class="icon icon--instagram"></span></a>
-      <a href="#" class="social-icons__icon"><span class="icon icon--youtube"></span></a>
-    </div><!-- /.social-icons -->
+      <div class="social-icons">
+        <a href="#" class="social-icons__icon"><span class="icon icon--facebook"></span></a>
+        <a href="#" class="social-icons__icon"><span class="icon icon--twitter"></span></a>
+        <a href="#" class="social-icons__icon"><span class="icon icon--instagram"></span></a>
+        <a href="#" class="social-icons__icon"><span class="icon icon--youtube"></span></a>
+      </div><!-- /.social-icons --> 
+    </div>
+    <!-- /.modal__inner -->
+    <!-- .modal__close -->
+    <div class="modal__close">X</div>
+    <!-- /.modal__close -->
   </div><!-- /.modal -->
 <script src="assets/js/global.js"></script>
 <script src="assets/js/home.js"></script>
