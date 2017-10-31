@@ -11,6 +11,7 @@
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="/temp/styles/styles.css">
+    <script src="/temp/js/Vendor.js"></script>
 </head>
 
 <body>
@@ -164,7 +165,7 @@
 
   <div id="technologies" class="page-section
     page-section--no-b-padding-until-large
-        page-section--technologies"
+        page-section--technologies lazyload"
         data-matching-link="#technologies-link">
     <div class="wrapper wrapper--no-p-until-large">
       <h2 class="section-title section-title--blue">
@@ -177,7 +178,11 @@
         <div class="row__medium-4">
           <div class="technologies">
             <div class="technologies__photo">
-              <img class="technologies__photo" src="assets/images/technologies-gulp.jpg" alt="jane photo">
+              <!-- .technologies__photo -->
+              <div class="technologies__photo">
+                <img class="lazyload" data-srcset="assets/images/technologies-gulp.jpg" alt="jane photo">
+              </div>
+              <!-- /.technologies__photo -->
               <h2 class="technologies__title">Gulp</h2>
               <h3 class="technologies__subtitle">Build tasks</h3>
               <p><strong>Gulp</strong> is useful for code minification, code concatenation,
@@ -195,7 +200,7 @@
           <!-- .technologies -->
           <div class="technologies">
             <div class="technologies__photo">
-              <img src="assets/images/technologies-postcss.png" alt="PostCSS logo">
+              <img class="lazyload" data-srcset="assets/images/technologies-postcss.png" alt="PostCSS logo">
             </div>
             <!-- /.technologies__photo -->
             <h2 class="technologies__title">PostCSS</h2>
@@ -209,8 +214,8 @@
             <!-- .row__medium-4 -->
             <div class="row__medium-4">
               <div class="technologies technologies--last">
-                <div class="technologies__photo">
-                  <img class="technologies__photo" src="assets/images/technologies-babel.png" alt="Cat photo">
+                <div class="technologies">
+                  <img class="lazyload" data-srcset="assets/images/technologies-babel.png" alt="Cat photo">
                   <h2 class="technologies__title">Babel</h2>
                   <h3 class="technologies__subtitle">JavaScript compiler</h3>
                   <p><strong>Babel</strong> has support for the latest version of JavaScript through syntax transformers. These plugins allow you to use new syntax, right now without waiting for browser support.</p>

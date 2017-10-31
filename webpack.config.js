@@ -1,10 +1,13 @@
 const path = require('path');
 
 module.exports = {
-  entry: './app/assets/js/App.js',
+  entry: {
+    App: './app/assets/js/App.js',
+    Vendor: './app/assets/js/Vendor.js'
+  },
   output: {
     path: path.join(__dirname, './app/temp/js'),
-    filename: 'App.js'
+    filename: '[name].js'
   },
   module: {
     loaders: [
