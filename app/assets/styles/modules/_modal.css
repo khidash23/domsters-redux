@@ -1,0 +1,17 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+
+  background-color: rgba($white, 0.94);
+
+  &__description {
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.65;
+    text-align: center;
+  }
+}
