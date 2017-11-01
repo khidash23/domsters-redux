@@ -1,3 +1,11 @@
+.flexbox .example-element {
+  padding: 1rem;
+}
+
+.cssnanimations .some-other-element {
+  margin: 1rem;
+}
+
 .btn {
   background-color: $purple;
   color: $white;
