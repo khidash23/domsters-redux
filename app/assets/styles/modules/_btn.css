@@ -1,17 +1,12 @@
-.flexbox .example-element {
-  padding: 1rem;
-}
-
-.cssnanimations .some-other-element {
-  margin: 1rem;
-}
-
 .btn {
   background-color: $purple;
   color: $white;
   display: inline-block;
   padding: 0.75rem 1.2rem;
+  margin-top: 0.75rem;
   text-decoration: none;
+  font-weight: 500;
+  font-size: 1.7rem;
 
   &--orange {
     background-color: $orange;

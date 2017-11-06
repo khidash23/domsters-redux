@@ -6,7 +6,7 @@
   }
 
   &--gutters {
-    margin-right: 6.5rem;
+    margin-right: -6.5rem;
   }
 
   &--gutters-small {
@@ -59,7 +59,7 @@
   }
   
   /* Begin Equal Height Rules */
-  &--equal-height-at-medium {
+  &--equal-height-at-large {
     @mixin atMedium {
       display: flex;
     }

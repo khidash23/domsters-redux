@@ -1,6 +1,6 @@
 .headline {
   font-weight: 300;
-  font-size: 4.6rem;
+  font-size: 1.6rem;
   color: $white;
 
   @mixin atSmall {
@@ -16,11 +16,7 @@
   }
 
   &--small {
-    font-size: 1.2rem;
-
-    &mixin atSmall {
-      font-size: 3rem;
-    }
+    font-size: 2.2rem;
   }
 
   &--narrow {
@@ -31,13 +27,20 @@
   &--no-t-margin {
     margin-top: 0;
   }
+  
+  &--light {
+    font-weight: 100;
+  }
 
-  &--bottom-margin-small {
+  &--b-margin-small {
     margin-bottom: 0.5em;
   }
 
-  &--bottom-margin-large {
+  &--b-margin-large {
     margin-bottom: 1.6em;
   }
 
+  strong {
+    font-weight: 400;
+  }
 }

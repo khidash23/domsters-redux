@@ -6,7 +6,7 @@
   }
   
   &--pull-right {
-    @mixin atMedium {
+    @mixin atLarge {
       float: right;
     }
   }
@@ -20,16 +20,22 @@
 
   li {
     list-style: none;
-    float: left;
+    display: inline-block;
+    padding-right: 0.7rem;
+    
+    @mixin atMedium {
+      float: left;
+    }
   }
 
   a {
     background-color: rgba($blue, 0.5);
     color: $white;
     display: block;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 300;
-    padding: 1rem 0;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
     text-decoration: none;
 
     @mixin atMedium {
