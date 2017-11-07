@@ -11,7 +11,7 @@ class StickyHeader {
   }
 
   refreshWaypoints() {
-    this.lazyImages.on('load', function() {
+    this.lazyImages.on('load', () => {
       Waypoint.refreshAll();
     });
   }
@@ -20,7 +20,7 @@ class StickyHeader {
     const that = this;
     new Waypoint({
       element: that.headerTriggerElement[0],
-      handler: function(direction) {
+      handler(direction) {
         if (direction === 'down') {
           that.siteHeader.addClass('site-header--dark');
         } else {

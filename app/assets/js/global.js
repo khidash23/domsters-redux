@@ -1,9 +1,13 @@
+/* eslint-disable no-var */
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-param-reassign */
+/* eslint-disable no-undef */
 function addLoadEvent(func) {
-  var oldonload = window.onload;
-  if (typeof window.onload != 'function') {
+  const oldonload = window.onload;
+  if (typeof window.onload !== 'function') {
     window.onload = func;
   } else {
-    window.onload = function() {
+    window.onload = function loadJS() {
       oldonload();
       func();
     };
@@ -11,8 +15,8 @@ function addLoadEvent(func) {
 }
 
 function insertAfter(newElement, targetElement) {
-  var parent = targetElement.parentNode;
-  if (parent.lastChild == targetElement) {
+  const parent = targetElement.parentNode;
+  if (parent.lastChild === targetElement) {
     parent.appendChild(newElement);
   } else {
     parent.insertBefore(newElement, targetElement.nextSibling);
@@ -20,6 +24,7 @@ function insertAfter(newElement, targetElement) {
 }
 
 function addClass(element, value) {
+  let newClassName;
   if (!element.className) {
     element.className = value;
   } else {
@@ -34,17 +39,18 @@ function highlightPage() {
   if (!document.getElementsByTagName) return false;
   if (!document.getElementById) return false;
   if (!document.getElementById('navigation')) return false;
-  var nav = document.getElementById('navigation');
-  var links = nav.getElementsByTagName('a');
-  for (var i = 0; i < links.length; i++) {
-    var linkurl = links[i].getAttribute('href');
-    var currenturl = window.location.href;
-    if (currenturl.indexOf(linkurl) != -1) {
+  const nav = document.getElementById('navigation');
+  const links = nav.getElementsByTagName('a');
+  for (let i = 0; i < links.length; i += i + 1) {
+    const linkurl = links[i].getAttribute('href');
+    const currenturl = window.location.href;
+    if (currenturl.indexOf(linkurl) !== -1) {
       links[i].className = 'here';
-      var linktext = links[i].lastChild.nodeValue.toLowerCase();
+      const linktext = links[i].lastChild.nodeValue.toLowerCase();
       document.body.setAttribute('id', linktext);
     }
   }
+  return false;
 }
 
 addLoadEvent(highlightPage);

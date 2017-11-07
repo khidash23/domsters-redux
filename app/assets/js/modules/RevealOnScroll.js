@@ -1,3 +1,4 @@
+/* eslint-disable no-new, no-unused-vars, func-names, object-shorthand, no-undef */
 import $ from 'jquery';
 import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoints';
 
@@ -15,11 +16,11 @@ class RevealOnScroll {
 
   createWaypoints() {
     const that = this;
-    this.itemsToReveal.each(function() {
+    this.itemsToReveal.each(function () {
       const currentItem = this;
       new Waypoint({
         element: currentItem,
-        handler: function() {
+        handler: function () {
           $(currentItem).addClass('reveal-item--is-visible');
         },
         offset: that.offsetPercentage

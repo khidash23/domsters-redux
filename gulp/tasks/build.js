@@ -1,7 +1,8 @@
-const gulp = require('gulp'),
-  imagemin = require('gulp-imagemin'),
-  del = require('del'),
-  usemin = require('gulp-usemin');
+/* eslint-disable import/no-extraneous-dependencies */
+const gulp = require('gulp');
+const imagemin = require('gulp-imagemin');
+const del = require('del');
+const usemin = require('gulp-usemin');
 
 gulp.task('deleteDistFolder', function() {
   return del('./dist');
@@ -27,7 +28,10 @@ gulp.task('optimizeImages', ['deleteDistFolder'], function() {
 gulp.task('usemin', ['deleteDistFolder'], function() {
   return gulp
     .src('./app/index.html')
-    .pipe(usemin())
+    .pipe(usemin({
+      js: []
+    }))
+      css: [function() {}, function() {}],
     .pipe(gulp.dest('./dist'));
 });
 

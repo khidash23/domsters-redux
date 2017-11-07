@@ -1,9 +1,9 @@
-var gulp = require('gulp'),
+let gulp = require('gulp'),
   webpack = require('webpack');
 
-gulp.task('scripts', ['modernizr'], function(callback) {
+gulp.task('scripts', ['modernizr'], (callback) => {
   // tell webpack where our config file is
-  webpack(require('../../webpack.config.js'), function(err, stats) {
+  webpack(require('../../webpack.config.js'), (err, stats) => {
     if (err) {
       console.log(err.toString());
     }

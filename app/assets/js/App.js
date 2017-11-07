@@ -1,10 +1,12 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-new */
+import $ from 'jquery';
 import MobileMenu from './modules/MobileMenu';
 import RevealOnScroll from './modules/RevealOnScroll';
 import StickyHeader from './modules/StickyHeader';
 import HighlightSection from './modules/HighlightSection';
 import SmoothScrolling from './modules/SmoothScrolling';
 import Modal from './modules/Modal';
-import $ from 'jquery';
 
 const mobileMenu = new MobileMenu();
 

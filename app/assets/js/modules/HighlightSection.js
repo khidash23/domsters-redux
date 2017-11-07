@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars, no-new, no-undef, func-names, object-shorthand */
 import $ from 'jquery';
 import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoints';
 
@@ -10,15 +11,13 @@ class HighlightSection {
 
   createPageSectionWaypoints() {
     const that = this;
-    this.pageSections.each(function() {
+    this.pageSections.each(function () {
       const currentPageSection = this;
       new Waypoint({
         element: currentPageSection,
-        handler: function(direction) {
+        handler: function (direction) {
           if (direction === 'down') {
-            const matchingHeaderLink = currentPageSection.getAttribute(
-              'data-matching-link'
-            );
+            const matchingHeaderLink = currentPageSection.getAttribute('data-matching-link');
             that.headerLinks.removeClass('is-current-link');
             $(matchingHeaderLink).addClass('is-current-link');
           }
@@ -28,11 +27,9 @@ class HighlightSection {
 
       new Waypoint({
         element: currentPageSection,
-        handler: function(direction) {
+        handler: function (direction) {
           if (direction === 'up') {
-            const matchingHeaderLink = currentPageSection.getAttribute(
-              'data-matching-link'
-            );
+            const matchingHeaderLink = currentPageSection.getAttribute('data-matching-link');
             that.headerLinks.removeClass('is-current-link');
             $(matchingHeaderLink).addClass('is-current-link');
           }
