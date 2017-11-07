@@ -1,8 +1,9 @@
-let gulp = require('gulp'),
-  svgSprite = require('gulp-svg-sprite'),
-  rename = require('gulp-rename'),
-  del = require('del'),
-  svg2png = require('gulp-svg2png-node7fix');
+/* eslint disable */
+const gulp = require('gulp');
+const svgSprite = require('gulp-svg-sprite');
+const rename = require('gulp-rename');
+const del = require('del');
+const svg2png = require('gulp-svg2png');
 
 const config = {
   shape: {
@@ -41,12 +42,13 @@ gulp.task('createSprite', ['beginClean'], () => (gulp
   // output generated sprite to time file
   .pipe(gulp.dest('./app/temp/sprite/'))));
 
-gulp.task('createPngCopy', ['createSprite'], () => gulp
-  .src('./app/temp/sprite/css/*.svg')
-  .pipe(svg2png())
-  .pipe(gulp.dest('./app/temp/sprite/css')));
+// gulp.task('createPngCopy', ['createSprite'], () => gulp
+//   .src('./app/temp/sprite/css/*.svg')
+//   .pipe(svg2png())
+//   .pipe(gulp.dest('./app/temp/sprite/css')));
 
-gulp.task('copySpriteGraphic', ['createPngCopy'], () => gulp
+// gulp.task('copySpriteGraphic', ['createPngCopy'], () => gulp
+gulp.task('copySpriteGraphic', () => gulp
   .src('./app/temp/sprite/css/**/*.{svg,png}')
   .pipe(gulp.dest('./app/assets/images/sprites')));
 
@@ -63,7 +65,7 @@ gulp.task('endClean', ['copySpriteGraphic', 'copySpriteCSS'], () => del('./app/t
 gulp.task('icons', [
   'beginClean',
   'createSprite',
-  'createPngCopy',
+  // 'createPngCopy',
   'copySpriteGraphic',
   'copySpriteCSS',
   'endClean'
