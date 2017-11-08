@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "gulp-sourcemaps": "^2.6.1",
     "gulp-yarn": "^1.0.1",
     "jquery": "^3.2.1",
     "jquery-smooth-scroll": "^2.2.0",

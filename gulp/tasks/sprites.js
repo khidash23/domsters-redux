@@ -1,9 +1,9 @@
-/* eslint disable */
+/* eslint-disable import/no-extraneous-dependencies, func-names */
 const gulp = require('gulp');
 const svgSprite = require('gulp-svg-sprite');
 const rename = require('gulp-rename');
 const del = require('del');
-const svg2png = require('gulp-svg2png');
+// const svg2png = require('gulp-svg2pngfix');
 
 const config = {
   shape: {

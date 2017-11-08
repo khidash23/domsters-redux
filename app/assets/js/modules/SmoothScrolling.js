@@ -6,11 +6,13 @@ import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoi
 class SmoothScrolling {
   constructor() {
     this.headerLinks = $('.primary-nav a');
+    this.featuredItemBackToTop = $('#features a');
     this.addSmoothScrolling();
   }
 
   addSmoothScrolling() {
     this.headerLinks.smoothScroll();
+    this.featuredItemBackToTop.smoothScroll();
   }
 }
 
