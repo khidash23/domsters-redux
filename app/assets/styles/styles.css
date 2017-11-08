@@ -7,12 +7,14 @@
 @import 'modules/_wrapper.css';
 @import 'modules/_row.css';
 @import 'modules/_page-section.css';
-@import 'modules/_header.css';
+/* @import 'modules/_header.css';
 @import 'modules/_page.css';
-@import 'modules/_table.css';
+@import 'modules/_table.css'; */
+
+
 @import 'modules/_primary-nav.css';
-@import 'modules/_gallery.css';
-@import 'modules/_about.css';
+/* @import 'modules/_gallery.css';
+@import 'modules/_about.css'; */
 @import 'modules/_site-header.css';
 @import 'modules/_headline.css';
 @import 'modules/_btn.css';

@@ -1,5 +1,5 @@
 {
-  "extends": "airbnb",
+  "extends":["prettier"],
   "parserOptions": {
     "ecmaVersion": 6
   },
@@ -8,12 +8,16 @@
     "browser": true,
     "es6": true
   },
+  "plugins": [
+    "prettier"
+  ],
   "rules": {
     "comma-dangle": ["error","never"],
+    "prettier/prettier": "error",
     "no-unused-vars": [ "error",
     {
       "vars": "local",
       "args": "none"
     }],
-}
+  },
 }

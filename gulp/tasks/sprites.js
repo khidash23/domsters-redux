@@ -75,7 +75,6 @@ gulp.task('endClean', ['copySpriteGraphic', 'copySpriteCSS'], () =>
 gulp.task('icons', [
   'beginClean',
   'createSprite',
-  // 'createPngCopy',
   'copySpriteGraphic',
   'copySpriteCSS',
   'endClean'
