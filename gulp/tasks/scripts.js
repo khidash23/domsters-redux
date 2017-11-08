@@ -1,7 +1,8 @@
-let gulp = require('gulp'),
-  webpack = require('webpack');
+/* eslint-disable import/no-extraneous-dependencies, arrow-parens, global-require, no-console  */
+const gulp = require('gulp');
+const webpack = require('webpack');
 
-gulp.task('scripts', ['modernizr'], (callback) => {
+gulp.task('scripts', ['modernizr'], callback => {
   // tell webpack where our config file is
   webpack(require('../../webpack.config.js'), (err, stats) => {
     if (err) {
