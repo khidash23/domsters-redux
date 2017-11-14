@@ -1,0 +1,87 @@
+.feature-item
+{
+  position: relative;
+  padding-bottom: 3rem;
+
+  &__title
+  {
+    font-size: 2.6rem;
+    font-weight: 300;
+    margin-top: 0.7rem;
+    margin-bottom: 0.8rem;
+    text-align: center;
+    color:$orange;
+  }
+
+  &__paragraph
+  {
+    font-size:1.4rem;
+    letter-spacing: 0.1rem;
+    color:$white;
+  }
+
+  /* used by photos */
+  &__imagegallery
+  {
+    list-style-type: none;
+    display:block;
+  }
+
+  &__imagegallery li
+  {
+    margin:0.5rem 0;
+  }
+
+  &__imagegallery-link a img
+  {
+    width:25%;
+    height:25%;
+    border:1px solid $black;
+  }
+
+  &__imagegallery-link a img:hover
+  {
+    border:1px solid $white;
+  }
+
+  &__placeholder
+  {
+    position:relative;
+  }
+
+  &__placeholder-description
+  {
+    font-size:1.4rem;
+    color:$orange;
+  }
+
+  &__placeholder-image
+  {
+    position: absolute;
+    float:left;
+  }
+}
+
+/* used by about */
+.internalnav
+{
+  list-style-type: none;
+
+  &__link
+  {
+    font-size:1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  &__link a
+  {
+    text-decoration: none;
+    color:$orange;
+  }
+
+  &__link a:hover
+  {
+    color:$white;
+  }
+}
+

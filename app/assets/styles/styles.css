@@ -1,20 +1,14 @@
-/*@import '~normalize.css';*/
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+@import 'normalize.css';
+@import 'base/_variables.css';
+@import 'base/_mixins.css';
+/*@import 'base/_normalize.css';*/
 
-
-/*@import 'base/_variables';*/
-
-
-/*@import 'base/_mixins';*/
-
-@import 'base/_normalize.css';
 @import 'base/_global.css';
-
-
-/*@import url('https://fonts.googleapis.com/css?family=Slabo+27px');*/
-
-@import 'base/_live-table.css';
-@import 'modules/_header.css';
-@import 'modules/_content.css';
-@import 'modules/_table.css';
 @import 'modules/_navigation.css';
-@import 'modules/_gallery.css';
+@import 'modules/_wrapper.css';
+@import 'modules/_feature-item.css';
+@import 'modules/_section-title.css';
+@import 'modules/_row.css';
+@import 'modules/_page-section.css';
+
