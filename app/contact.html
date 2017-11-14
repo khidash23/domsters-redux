@@ -1,7 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="">
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title></title>
@@ -11,37 +10,51 @@
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="temp/styles/styles.css">
-</head>
+  </head>
 
-<body>
+  <body>
     <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
     <!-- Add your site or application content here -->
-    <div class="header">
+    <div class="header" style="display:none;">
         <img src="assets/img/logo.gif" alt="Jay Skript and the Domsters" />
     </div>
     <div class="navigation">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="photos.html">Photos</a></li>
-            <li><a href="live.html">Live</a></li>
-            <li><a href="contact.html">Contact</a></li>
+        <ul class="navigation__container">
+            <li class="navigation__link"><a href="index.html">Home</a></li>
+            <li class="navigation__link"><a href="about.html">About</a></li>
+            <li class="navigation__link"><a href="photos.html">Photos</a></li>
+            <li class="navigation__link"><a href="live.html">Live</a></li>
+            <li class="navigation__link"><a href="contact.html">Contact</a></li>
         </ul>
     </div>
 
-    <!--want to make font sizes smaller-->
-    <div class="container" >
-               <label><b>Name:</b></label>
-               <input type="name" placeholder="Name" name="uname" required>
-               <label><b>Email:</b></label>
-               <input type="email" placeholder="Email" name="psw" required>
-               <label><b>Message:</b></label>
+    <div id="feature" class="page-section">
+      <div class="wrapper">
+        <h2 class="section-title">Contact the band!</h2>
+        <div class="row">
+          <div class="row-medium-12">
+            <div class="feature-item">
+              <div class="feature-item__form">
+                <label class="feature-item__form-label"><b>Name:</b></label>
+                <input type="name" placeholder="Name" name="uname" required>
+                <label class="feature-item__form-label"><b>Email:</b></label>
+                <input type="email" placeholder="Email" name="psw" required>
+                <label class="feature-item__form-label"><b>Message:</b></label>
                 <textarea name="name" placeholder="Write your message here." rows="4" cols="30"></textarea>
+
                 <br>
-               <button type="send ">Send</button>
+
+                <button class="feature-item__form-send" type="send">Send</button>
+
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="assets/js/global.js"></script>
     <script src="assets/js/contact.js"></script>
 </body>

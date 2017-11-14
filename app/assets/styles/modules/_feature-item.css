@@ -60,6 +60,66 @@
     position: absolute;
     float:left;
   }
+
+  /*used by live */
+  &__table
+  {
+    width:100%;
+    margin:0 auto;
+  }
+
+  &__table-head
+  {
+    color: $tan;
+    background-color: $aqua;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  &__table-row
+  {
+    font-size: 1.6rem;
+    color: $black;
+    background-color: $yellow;
+    padding:0.4rem;
+  }
+
+  /*used by contact */
+  &__form
+  {
+    width:50%;
+    margin:0 auto;
+    position: relative;
+  }
+
+  &__form input
+  {
+    margin-bottom:0.8rem;
+    width:100%;
+  }
+
+  &__form textarea
+  {
+    margin-bottom:1.6rem;
+    width:100%;
+  }
+
+  &__form-label
+  {
+    display:block;
+    color:$orange;
+    margin-bottom:0.4rem;
+    font-size:1.8rem;
+    font-weight: 700;
+  }
+
+  &__form-send
+  {
+    margin:0;
+    font-weight: 700;
+    font-size:1.6rem;
+    float:right;
+  }
 }
 
 /* used by about */
