@@ -397,8 +397,7 @@ img {
     font-size:1.8rem;
     font-weight: 700;
     letter-spacing: 0.15rem;
-    margin:0.2rem 1rem;
-    padding:0.2rem;
+    margin:0.8rem 1.2rem 0rem 1.2rem;
   }
 .navigation__link a
   {
@@ -427,7 +426,6 @@ img {
     font-weight: 300;
     margin-top: 0.7rem;
     margin-bottom: 0.8rem;
-    text-align: center;
     color:#ffbb55;
   }
 .feature-item__paragraph
@@ -435,115 +433,11 @@ img {
     font-size:1.4rem;
     letter-spacing: 0.1rem;
     color:#ffffff;
-  }
-/* used by photos */
-.feature-item__imagegallery
-  {
-    list-style-type: none;
-    display:block;
-  }
-.feature-item__imagegallery li
-  {
-    margin:0.5rem 0;
-  }
-.feature-item__imagegallery-link a img
-  {
-    width:25%;
-    height:25%;
-    border:1px solid #223333;
-  }
-.feature-item__imagegallery-link a img:hover
-  {
-    border:1px solid #ffffff;
-  }
-.feature-item__placeholder
-  {
-    position:relative;
-  }
-.feature-item__placeholder-description
-  {
-    font-size:1.4rem;
-    color:#ffbb55;
-  }
-.feature-item__placeholder-image
-  {
-    position: absolute;
-    float:left;
-  }
-/*used by live */
-.feature-item__table
-  {
-    width:100%;
-    margin:0 auto;
-  }
-.feature-item__table-head
-  {
-    color: #eeddcc;
-    background-color: #445555;
-    font-size: 2rem;
-    font-weight: 700;
-  }
-.feature-item__table-row
-  {
-    font-size: 1.6rem;
-    color: #223333;
-    background-color: #eebb66;
-    padding:0.4rem;
-  }
-/*used by contact */
-.feature-item__form
-  {
-    width:50%;
-    margin:0 auto;
-    position: relative;
-  }
-.feature-item__form input
-  {
-    margin-bottom:0.8rem;
-    width:100%;
-  }
-.feature-item__form textarea
-  {
-    margin-bottom:1.6rem;
-    width:100%;
-  }
-.feature-item__form-label
-  {
-    display:block;
-    color:#ffbb55;
-    margin-bottom:0.4rem;
-    font-size:1.8rem;
-    font-weight: 700;
-  }
-.feature-item__form-send
-  {
-    margin:0;
-    font-weight: 700;
-    font-size:1.6rem;
-    float:right;
-  }
-/* used by about */
-.internalnav
-{
-  list-style-type: none;
-}
-.internalnav__link
-  {
-    font-size:1.8rem;
-    margin-bottom: 2rem;
-  }
-.internalnav__link a
-  {
-    text-decoration: none;
-    color:#ffbb55;
-  }
-.internalnav__link a:hover
-  {
-    color:#ffffff;
+    padding:0.2rem;
   }
 .section-title
 {
-  color: #333344;
+  color: #ffffff;
 }
 .row::after
   {
@@ -591,5 +485,151 @@ img {
   {
     background-color: #ffbb55;
     color: #ffffff;
+  }
+.header
+{
+  margin:0;
+  padding:0;
+  background-color: #333344;
+}
+.header__logo
+  {
+    margin-left:1rem;
+  }
+/* pages */
+/* used by about */
+.about__title
+  {
+    font-size: 2.6rem;
+    font-weight: 300;
+    margin-top: 0.7rem;
+    margin-bottom: 0.8rem;
+    text-align: center;
+    color:#ffbb55;
+  }
+.about__paragraph
+  {
+    font-size:1.4rem;
+    letter-spacing: 0.1rem;
+    color:#ffffff;
+  }
+.about__internalnav
+  {
+    list-style-type: none;
+  }
+.about__internalnav-link
+  {
+    font-size:1.8rem;
+    margin-bottom: 2rem;
+  }
+.about__internalnav-link a
+  {
+    text-decoration: none;
+    color:#ffbb55;
+  }
+.about__internalnav-link a:hover
+  {
+    color:#ffffff;
+  }
+.photos
+{
+  position: relative;
+  padding-bottom: 3rem;
+}
+/* used by photos */
+.photos__imagegallery
+  {
+    list-style-type: none;
+    display:block;
+  }
+.photos__imagegallery li
+  {
+    margin:0.5rem 0;
+  }
+.photos__imagegallery-link a img
+  {
+    width:25%;
+    height:25%;
+    border:1px solid #223333;
+  }
+.photos__imagegallery-link a img:hover
+  {
+    border:1px solid #ffffff;
+  }
+.photos__placeholder
+  {
+    position:relative;
+  }
+.photos__placeholder-description
+  {
+    font-size:1.4rem;
+    color:#ffbb55;
+  }
+.photos__placeholder-image
+  {
+    position: absolute;
+    float:left;
+  }
+.live
+{
+  position: relative;
+  padding-bottom: 3rem;
+}
+/*used by live */
+.live__table
+  {
+    width:100%;
+    margin:0 auto;
+  }
+.live__table-head
+  {
+    color: #eeddcc;
+    background-color: #445555;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+.live__table-row
+  {
+    font-size: 1.6rem;
+    color: #223333;
+    background-color: #eebb66;
+    padding:0.4rem;
+  }
+.contact
+{
+  position: relative;
+  padding-bottom: 3rem;
+}
+/*used by contact */
+.contact__form
+  {
+    width:50%;
+    margin:0 auto;
+    position: relative;
+  }
+.contact__form-input
+  {
+    margin-bottom:0.8rem;
+    width:100%;
+  }
+.contact__form-textarea
+  {
+    margin-bottom:1.6rem;
+    width:100%;
+  }
+.contact__form-label
+  {
+    display:block;
+    color:#ffbb55;
+    margin-bottom:0.4rem;
+    font-size:1.8rem;
+    font-weight: 700;
+  }
+.contact__form-send
+  {
+    margin:0;
+    font-weight: 700;
+    font-size:1.6rem;
+    float:right;
   }
 

@@ -17,9 +17,10 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
     <!-- Add your site or application content here -->
-    <div class="header" style="display:none;">
-        <img src="assets/img/logo.gif" alt="Jay Skript and the Domsters" />
+    <div class="header">
+      <img class="header__logo" src="assets/img/logo.gif" alt="Jay Skript and the Domsters" />
     </div>
+
     <div class="navigation">
         <ul class="navigation__container">
             <li class="navigation__link"><a href="index.html">Home</a></li>
@@ -35,14 +36,16 @@
         <h2 class="section-title">Contact the band!</h2>
         <div class="row">
           <div class="row-medium-12">
-            <div class="feature-item">
-              <div class="feature-item__form">
-                <label class="feature-item__form-label"><b>Name:</b></label>
-                <input type="name" placeholder="Name" name="uname" required>
-                <label class="feature-item__form-label"><b>Email:</b></label>
-                <input type="email" placeholder="Email" name="psw" required>
-                <label class="feature-item__form-label"><b>Message:</b></label>
-                <textarea name="name" placeholder="Write your message here." rows="4" cols="30"></textarea>
+            <div class="contact">
+              <div class="contact__form">
+                <label class="contact__form-label"><b>Name:</b></label>
+                <input class="contact__form-input" type="name" placeholder="Name" name="uname" required>
+
+                <label class="contact__form-label"><b>Email:</b></label>
+                <input class="contact__form-input" type="email" placeholder="Email" name="psw" required>
+
+                <label class="contact__form-label"><b>Message:</b></label>
+                <textarea class="contact__form-textarea" name="name" placeholder="Write your message here." rows="4" cols="30"></textarea>
 
                 <br>
 

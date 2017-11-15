@@ -1,0 +1,47 @@
+.photos
+{
+  position: relative;
+  padding-bottom: 3rem;
+
+
+  /* used by photos */
+  &__imagegallery
+  {
+    list-style-type: none;
+    display:block;
+  }
+
+  &__imagegallery li
+  {
+    margin:0.5rem 0;
+  }
+
+  &__imagegallery-link a img
+  {
+    width:25%;
+    height:25%;
+    border:1px solid $black;
+  }
+
+  &__imagegallery-link a img:hover
+  {
+    border:1px solid $white;
+  }
+
+  &__placeholder
+  {
+    position:relative;
+  }
+
+  &__placeholder-description
+  {
+    font-size:1.4rem;
+    color:$orange;
+  }
+
+  &__placeholder-image
+  {
+    position: absolute;
+    float:left;
+  }
+}

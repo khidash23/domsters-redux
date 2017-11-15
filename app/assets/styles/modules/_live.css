@@ -1,0 +1,28 @@
+.live
+{
+  position: relative;
+  padding-bottom: 3rem;
+
+  /*used by live */
+  &__table
+  {
+    width:100%;
+    margin:0 auto;
+  }
+
+  &__table-head
+  {
+    color: $tan;
+    background-color: $aqua;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  &__table-row
+  {
+    font-size: 1.6rem;
+    color: $black;
+    background-color: $yellow;
+    padding:0.4rem;
+  }
+}

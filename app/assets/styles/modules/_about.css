@@ -1,0 +1,42 @@
+/* used by about */
+.about
+{
+  &__title
+  {
+    font-size: 2.6rem;
+    font-weight: 300;
+    margin-top: 0.7rem;
+    margin-bottom: 0.8rem;
+    text-align: center;
+    color:$orange;
+  }
+
+  &__paragraph
+  {
+    font-size:1.4rem;
+    letter-spacing: 0.1rem;
+    color:$white;
+  }
+
+  &__internalnav
+  {
+    list-style-type: none;
+  }
+
+  &__internalnav-link
+  {
+    font-size:1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  &__internalnav-link a
+  {
+    text-decoration: none;
+    color:$orange;
+  }
+
+  &__internalnav-link a:hover
+  {
+    color:$white;
+  }
+}
